@@ -1,0 +1,37 @@
+html {
+  min-width: 560px;
+  min-height: 360px;
+  font: Verdana;
+  font-size: 12px;
+  color: #4C676B;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #BEC1BE;
+  overflow: hidden;
+  letter-spacing: 0.8px;
+}
+
+body {
+  size: *;
+  margin: 0;
+  background: #EDEDED;
+}
+
+.container {
+  size: *;
+  padding: 0.5em;
+  margin: 1em 0 0 0;
+  flow: vertical;
+  border-spacing: 0.5em;
+}
+
+.col {
+  size: *;
+  flow: vertical;
+  border-spacing: 0.5em;
+}
+
+.row {
+  width: *;
+  flow: horizontal;
+  border-spacing: 0.5em;
+}

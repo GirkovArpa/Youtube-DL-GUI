@@ -1,0 +1,131 @@
+span {
+  width: *;
+}
+
+span {
+  color: #323232;
+  height: *;
+}
+
+span.gear {
+  size: 20px;
+  foreground-image: url('../img/settings_20px.png');
+  foreground-size: 20px 20px;
+  cursor: pointer;
+  behavior: clickable;
+}
+
+span.folder {
+  size: 26px;
+  foreground-size: 26px 26px;
+  foreground-image: url('../img/folder_32px.png');
+}
+
+textarea.urls {
+  width: *;
+  height: 8em;
+  overflow: scroll;
+}
+
+.col.path {
+  vertical-align: middle;
+  height: 26px;
+  width: 50%;
+}
+
+.path>.row {
+  height: 26px;
+}
+
+.path>.row>select, .path>.row>button {
+  height: 26px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.path>.row>select {
+  font-size: 10pt;
+  width: *;
+}
+
+.col.format {
+  height: 26px;
+  width: *;
+  min-width: 1px;
+}
+
+.col.path>.row {}
+
+.col.format>.row {
+  height: 26px;
+  width: *;
+  min-width: 1px;
+}
+
+.format>.row>select, .format>.row>button {
+  height: 26px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.format>.row>select {
+  width: 10em;
+}
+
+option {
+  background: white;
+  color: #323232;
+}
+
+option:hover {
+  background: #006FC7;
+  color: white;
+}
+
+button.add {
+  width: 74px;
+}
+
+span.expand {
+  width: *;
+}
+
+.buttons>button {
+  size: 42px;
+  foreground-position: 50% 50%;
+  foreground-repeat: no-repeat;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button.delete {
+  foreground-image: url('../img/delete_32px.png');
+}
+
+button.camera {
+  foreground-image: url('../img/camera_32px.png');
+}
+
+button.arrow-up {
+  foreground-image: url('../img/arrow_up_32px.png');
+}
+
+button.arrow-down {
+  foreground-image: url('../img/arrow_down_32px.png');
+}
+
+button.reload {
+  foreground-image: url('../img/reload_32px.png');
+}
+
+button.pause {
+  foreground-image: url('../img/pause_32px.png');
+}
+
+button.cloud-download {
+  foreground-image: url('../img/cloud_download_32px.png');
+}
+
+.row.status {
+  margin-top: 1em;
+}

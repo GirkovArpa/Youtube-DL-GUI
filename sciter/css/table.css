@@ -1,0 +1,106 @@
+.row.table {
+  height: *;
+}
+
+table {
+  size: *;
+  background: white;
+  border-color: #A6A6A6;
+  border-width: 1px 0 0 1px;
+  padding: 0;
+}
+
+thead {
+  border-bottom: 1px solid #D2D4D3;
+  background: linear-gradient(bottom, #D2D4D3 0%, white 100%);
+  margin-right: calc(1em - 3px);
+}
+
+thead>tr>* {
+  background: white;
+  box-sizing: border-box;
+  padding: 0.125em 0.25em;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+thead>tr>:first-child {
+  width: 295px;
+}
+
+thead>tr>:nth-child(3), thead>tr>:nth-child(4), thead>tr>:nth-child(5), thead>tr>:nth-child(6) {
+  width: 85px;
+}
+
+thead>tr>:last-child {
+  width: *;
+}
+
+thead>tr>*:not(:first-child) {
+  box-shadow: -1px 0px 0px 0px white;
+}
+
+tbody {
+  overflow-y: auto;
+  min-height: 1px;
+  height: *;
+}
+
+td {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* //////////////////////////////////// */
+
+table {
+  flow: table-fixed;
+  overflow-x: auto;
+}
+
+table[resizeable]>thead {
+  behavior: column-resizer;
+}
+
+th {
+  behavior: clickable;
+}
+
+table>tbody {
+  behavior: select-multiple;
+  border-spacing-y: 0;
+}
+
+table>tbody>tr {
+  behavior: form;
+  line-height: 2em;
+  /* mission critical: each repeated child is treated as a form so it can accept object values  */
+}
+
+/** effects **/
+
+th:hover {
+  background: url(theme:column-header-hover) stretch;
+}
+
+th:active {
+  background: url(theme:column-header-pressed) stretch;
+}
+
+table>tbody>tr.highlighted {
+  background: #da9;
+}
+
+table>tbody>tr:current, table>tbody>tr:checked {
+  background: url(theme:list-view-item-selected) stretch;
+}
+
+table>tbody>tr:hover {
+  background: url(theme:list-view-item-hover) stretch;
+}
+
+table>tbody>tr:current:hover, table>tbody>tr:checked:hover {
+  background: url(theme:list-view-item-selected-hover) stretch;
+}

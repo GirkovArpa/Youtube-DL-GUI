@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html window-frame="transparent" window-resizable>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube-DLG lite</title>
+    <link href="../css/caption.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/controls.css" rel="stylesheet">
+    <link href="../css/table.css" rel="stylesheet">
+    <script src="../js/main.js" type="text/javascript" type="module"></script>
+  </head>
+
+  <body>
+    <menu .popup .gear>
+      <li disabled>Options</li>
+      <li disabled>Update</li>
+      <li disabled>View Log</li>
+      <li>About</li>
+    </menu>
+    <div .titlebar>
+      <span role="window-caption">YouTube-DLG lite</span>
+      <span role="window-close">&times;</span>
+    </div>
+    <div .container>
+      <div .row>
+        <span .black>Enter URLs below</span>
+        <span .gear></span>
+      </div>
+      <div .row>
+        <textarea .urls>https://www.youtube.com/watch?v=rUWxSEwctFU</textarea>
+      </div>
+      <div .row>
+        <div .col .path>
+          <div .row>
+            <span .folder></span>
+            <select editable .folder></select>
+            <button .folder>...</button>
+          </div>
+        </div>
+        <div .col .format>
+          <div .row>
+            <span .expand></span>
+            <select editable #format>
+              <option selected>default</option>
+              <optgroup>
+                <caption>Video</caption>
+                <option>webm</option>
+                <option>mp4</option>
+              </optgroup>
+              <optgroup>
+                <caption>Audio</caption>
+                <option>mp3</option>
+                <option>m4a</option>
+                <option>vorbis</option>
+              </optgroup>
+            </select>
+            <button .add>Add</button>
+          </div>
+        </div>
+      </div>
+      <div .row>
+        <span>Download list</span>
+      </div>
+      <div .row .table>
+        <table resizeable>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Extension</th>
+              <th>Size</th>
+              <th>Percent</th>
+              <th>ETA</th>
+              <th>Speed</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div .row .buttons>
+        <button .delete title=Delete disabled></button>
+        <button .camera title=Play disabled></button>
+        <button .arrow-up title=Up disabled></button>
+        <button .arrow-down title=Down disabled></button>
+        <button .reload title=Reload disabled></button>
+        <button .pause title=Pause disabled></button>
+        <span .expand></span>
+        <button .cloud-download title=Start></button>
+      </div>
+      <div .row .status>
+        <span .status>Welcome</span>
+      </div>
+    </div>
+  </body>
+
+</html>
